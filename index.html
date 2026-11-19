@@ -127,6 +127,26 @@
       </div>
     </section>
 
+    <!-- ====================== FÖRTROENDERAD ======================
+         Spara loggorna som: images/trygg-hansa.png och images/transportstyrelsen.png
+         (gärna PNG/SVG med transparent bakgrund, ca 200x60 px). Saknas filen visas textversionen automatiskt. -->
+    <section class="bg-slate-50 border-b border-slate-200" aria-label="Försäkring och tillstånd">
+      <div class="max-w-6xl mx-auto px-4 py-6 grid gap-4 sm:grid-cols-2">
+        <div class="flex items-center gap-4 bg-white rounded-xl border border-slate-200 px-5 py-4">
+          <img src="images/trygg-hansa.png" alt="Trygg-Hansa" class="h-10 w-auto max-w-[140px] object-contain"
+               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+          <i class="hidden fa-solid fa-shield-halved text-brand text-3xl" aria-hidden="true"></i>
+          <p class="text-sm text-slate-700"><span class="block font-extrabold text-ink">Försäkrade via Trygg-Hansa</span>Din flytt och dina saker är skyddade.</p>
+        </div>
+        <div class="flex items-center gap-4 bg-white rounded-xl border border-slate-200 px-5 py-4">
+          <img src="images/transportstyrelsen.png" alt="Transportstyrelsen" class="h-10 w-auto max-w-[140px] object-contain"
+               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+          <i class="hidden fa-solid fa-id-card text-brand text-3xl" aria-hidden="true"></i>
+          <p class="text-sm text-slate-700"><span class="block font-extrabold text-ink">Yrkestrafiktillstånd</span>Utfärdat av Transportstyrelsen.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ====================== TJÄNSTER ====================== -->
     <section id="tjanster" class="py-16 sm:py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4">
@@ -253,6 +273,18 @@
             <div>
               <label for="till" class="block text-sm font-semibold text-ink mb-1">Till-adress *</label>
               <input id="till" name="till_adress" type="text" required
+                     class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-ink focus:ring-2 focus:ring-brand outline-none">
+            </div>
+
+            <!-- Våning -->
+            <div>
+              <label for="vaning_fran" class="block text-sm font-semibold text-ink mb-1">Våning från-adress</label>
+              <input id="vaning_fran" name="vaning_fran" type="text" inputmode="numeric" placeholder="T.ex. 3 (eller BV för bottenvåning)"
+                     class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-ink focus:ring-2 focus:ring-brand outline-none">
+            </div>
+            <div>
+              <label for="vaning_till" class="block text-sm font-semibold text-ink mb-1">Våning till-adress</label>
+              <input id="vaning_till" name="vaning_till" type="text" inputmode="numeric" placeholder="T.ex. 2 (eller BV för bottenvåning)"
                      class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:border-ink focus:ring-2 focus:ring-brand outline-none">
             </div>
 

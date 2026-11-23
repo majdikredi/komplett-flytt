@@ -65,6 +65,7 @@
         <a href="#tjanster" class="hover:text-brand transition">Tjänster</a>
         <a href="#om-oss" class="hover:text-brand transition">Om oss</a>
         <a href="#offert" class="hover:text-brand transition">Offert</a>
+        <a href="#kontakt" class="hover:text-brand transition">Kontakta oss</a>
       </nav>
 
       <div class="flex items-center gap-2">
@@ -82,7 +83,8 @@
       <div class="px-4 py-2 flex flex-col text-ink font-semibold">
         <a href="#tjanster" class="py-3 border-b border-slate-100">Tjänster</a>
         <a href="#om-oss" class="py-3 border-b border-slate-100">Om oss</a>
-        <a href="#offert" class="py-3">Offert</a>
+        <a href="#offert" class="py-3 border-b border-slate-100">Offert</a>
+        <a href="#kontakt" class="py-3">Kontakta oss</a>
       </div>
     </nav>
   </header>
@@ -103,7 +105,7 @@
             Trygg och smidig flytt i hela Sverige – <span class="text-brand">Vi bär det tunga åt dig.</span>
           </h1>
           <p class="mt-5 text-lg sm:text-xl text-slate-200 max-w-2xl">
-            Oavsett om det gäller hela bohaget eller enstaka tunga transporter löser vi det säkert och effektivt.
+            Komplett Flytt &amp; Transport erbjuder professionella flytttjänster för privatpersoner och företag. Kontakta oss för en trygg, smidig och prisvärd flytt.
           </p>
 
           <!-- Trust badges -->
@@ -120,9 +122,15 @@
           </ul>
 
           <!-- Stor CTA -->
-          <a href="#offert" class="mt-10 inline-flex w-full sm:w-auto justify-center items-center gap-3 bg-brand hover:bg-brand-dark text-white font-extrabold text-lg px-8 py-4 rounded-xl shadow-lg transition">
-            Få gratis offert <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
+          <div class="mt-10 flex flex-col sm:flex-row sm:items-center gap-4">
+            <a href="#offert" class="inline-flex w-full sm:w-auto justify-center items-center gap-3 bg-brand hover:bg-brand-dark text-white font-extrabold text-lg px-8 py-4 rounded-xl shadow-lg transition">
+              Få gratis offert <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="tel:+46739766618" class="inline-flex w-full sm:w-auto justify-center items-center gap-3 border-2 border-white/70 hover:bg-white hover:text-ink text-white font-bold text-lg px-6 py-3.5 rounded-xl transition">
+              <i class="fa-solid fa-phone text-brand" aria-hidden="true"></i>
+              <span><span class="font-semibold">Eller ring oss på</span> 073-976 66 18</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -155,7 +163,7 @@
           <p class="mt-3 text-slate-600">Vi hjälper både privatpersoner och företag – stort som smått.</p>
         </div>
 
-        <!-- Grid: 1 kolumn mobil, 2 på surfplatta, 4 på desktop.
+        <!-- Grid: 1 kolumn mobil, 2 på surfplatta, 3 på desktop (6 kort = 2 jämna rader).
              Kopiera ett <article>-block för att lägga till en tjänst. Byt ikon-klass (fa-...) för annan ikon. -->
         <!-- Flex med centrering så att sista raden (5 kort) hamnar i mitten. -->
         <div class="mt-12 flex flex-wrap justify-center gap-6">
@@ -180,8 +188,14 @@
 
           <article class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white border border-slate-200 border-t-4 border-t-brand rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
             <div class="w-14 h-14 rounded-xl bg-ink text-brand grid place-items-center text-2xl"><i class="fa-solid fa-dove" aria-hidden="true"></i></div>
-            <h3 class="mt-5 text-lg font-bold text-ink">Dödsbo</h3>
+            <h3 class="mt-5 text-lg font-bold text-ink">Dödsbotömning</h3>
             <p class="mt-2 text-slate-600">Taktfull och respektfull hantering samt tömning av dödsbon.</p>
+          </article>
+
+          <article class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white border border-slate-200 border-t-4 border-t-brand rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <div class="w-14 h-14 rounded-xl bg-ink text-brand grid place-items-center text-2xl"><i class="fa-solid fa-broom" aria-hidden="true"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-ink">Flyttstädning</h3>
+            <p class="mt-2 text-slate-600">Vi lämnar bostaden skinande ren – redo för besiktning och nästa ägare.</p>
           </article>
 
           <article class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white border border-slate-200 border-t-4 border-t-brand rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
@@ -254,8 +268,9 @@
                 <option value="" disabled selected>Välj...</option>
                 <option>Flytt</option>
                 <option>Transport</option>
-                <option>Dödsbo</option>
+                <option>Dödsbotömning</option>
                 <option>Röjning</option>
+                <option>Flyttstädning</option>
               </select>
             </div>
             <div>
@@ -328,6 +343,29 @@
         </form>
       </div>
     </section>
+
+    <!-- ====================== KONTAKTA OSS ====================== -->
+    <section id="kontakt" class="py-16 sm:py-20 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center">
+          <p class="text-sm font-bold uppercase tracking-widest text-brand">Kontakta oss</p>
+          <h2 class="mt-3 text-3xl font-extrabold text-ink">Vi finns här för dig</h2>
+          <div class="mx-auto mt-5 h-1 w-16 rounded-full bg-brand"></div>
+        </div>
+        <div class="mt-10 mx-auto max-w-2xl grid gap-6 sm:grid-cols-2">
+          <a href="tel:+46739766618" class="bg-white border border-slate-200 border-t-4 border-t-brand rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition">
+            <div class="mx-auto w-14 h-14 rounded-xl bg-ink text-brand grid place-items-center text-2xl"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+            <h3 class="mt-4 font-bold text-ink">Telefon</h3>
+            <p class="mt-1 text-slate-600">073-976 66 18</p>
+          </a>
+          <a href="mailto:kontakt@komplettflytt-transport.se" class="bg-white border border-slate-200 border-t-4 border-t-brand rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition">
+            <div class="mx-auto w-14 h-14 rounded-xl bg-ink text-brand grid place-items-center text-2xl"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+            <h3 class="mt-4 font-bold text-ink">E-post</h3>
+            <p class="mt-1 text-slate-600 whitespace-nowrap text-sm sm:text-xs md:text-sm">kontakt@komplettflytt-transport.se</p>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ====================== FOOTER ====================== -->
@@ -342,7 +380,7 @@
         <p class="text-white font-semibold">Kontakt</p>
         <ul class="mt-3 space-y-2 text-sm">
           <!-- ÄNDRA telefonnummer och e-post (både i href och i texten) -->
-          <li><a href="tel:+46700000000" class="hover:text-white transition"><i class="fa-solid fa-phone w-5 text-brand" aria-hidden="true"></i> 070-000 00 00</a></li>
+          <li><a href="tel:+46739766618" class="hover:text-white transition"><i class="fa-solid fa-phone w-5 text-brand" aria-hidden="true"></i> 073-976 66 18</a></li>
           <li><a href="mailto:kontakt@komplettflytt-transport.se" class="hover:text-white transition"><i class="fa-solid fa-envelope w-5 text-brand" aria-hidden="true"></i> kontakt@komplettflytt-transport.se</a></li>
         </ul>
       </div>
@@ -398,7 +436,7 @@
         }
         throw new Error('Serverfel ' + response.status);
       } catch (err) {
-        errorBox.textContent = 'Något gick fel och din förfrågan skickades inte. Försök igen eller ring oss på 070-000 00 00.';
+        errorBox.textContent = 'Något gick fel och din förfrågan skickades inte. Försök igen eller ring oss på 073-976 66 18.';
         errorBox.classList.remove('hidden');
         submitBtn.disabled = false;
         submitBtn.textContent = submitLabel;
